@@ -18,6 +18,7 @@ int main(int argc, char **argv){
 
     double integral = 0;
 
+    // 计时
     clock_t start, end;
     clock_t sys_start, sys_end;
     start = clock();
