@@ -24,5 +24,5 @@ docker exec -d mpi-host2 service ssh start
 docker exec -d mpi-host1 service ssh start
 docker exec -d mpi-host3 service ssh start
 # 编译运行
-docker exec  mpi-host1 mpicc /root/mpi/$1.c -o /root/mpi/tmp -lm
+docker exec mpi-host1 mpicc /root/mpi/$1.c -o /root/mpi/tmp -lm
 docker exec mpi-host1 mpirun -np $2 -host host1,host2,host3 /root/mpi/tmp $3
